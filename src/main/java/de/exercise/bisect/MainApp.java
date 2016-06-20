@@ -11,9 +11,43 @@ package de.exercise.bisect;
  */
 public class MainApp {
     
-    public static void main(String args[]) {
-        // hi ;) 
+    private static Polynom polynom;
+    private static double eps = 0.002f;
+    private static int maxIteration = 100;
+    private static int counter = 0;
+
+    public static void main(String[] args) {
+        polynom = new Polynom(0, 1, -2, -3, 0);
+        
+        bisect( (double) 1, (double) 4);
+        
+        
     }
     
-    
+    private static Double bisect(double a, double b) {
+        final double epsilon = 0.00001;
+        double y_m = 0.0, m = 0.0;
+        
+        // x^3-2*x^2-3*x
+        do {
+            m = (a + b) / 2;
+            y_m = polynom.calc(m);
+            System.out.println("Iteration: " + counter + ", a = " + a + ", b = " + b + ", m = " + m + ", y(m) = " + y_m);
+            
+            
+            if (y_m > 0) {
+                b = (a + b) / 2;
+                m = b;
+                
+            } else if (y_m < 0) {
+                a = (a + b) / 2;
+                m = a;
+            } else {
+                break;
+            }
+            
+        } while (Math.abs(y_m) > epsilon && counter < maxIteration);
+        return m;
+    }
+
 }
