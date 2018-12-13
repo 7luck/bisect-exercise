@@ -29,7 +29,7 @@ public class MainApp {
         double y_m = 0.0, m = 0.0;
         //und es funktioniert....
         // JUHUUU
-        // we are not done yet
+        // we are not done yet, das ist hoffentlich alles auf develop
         // x^3-2*x^2-3*x
         do {
             m = (a + b) / 2;
