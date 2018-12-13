@@ -65,5 +65,9 @@ public class MainApp {
     public static int multi(int zahl1, int zahl2){
         return zahl1 * zahl2;
     }
+    public static int divi(int zahl1, int zahl2){
+        return zahl1 / zahl2;
+    }
+    
 
 }
