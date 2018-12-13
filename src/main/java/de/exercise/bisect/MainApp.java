@@ -22,6 +22,7 @@ public class MainApp {
         bisect( (double) 1, (double) 4);
 
         System.out.println("Ergebnis Subtraktion: " + minus(4, 7));
+        System.out.println("Ergebnis Multiplikation: " + multi(7, 4));
         
         
     }
@@ -60,6 +61,9 @@ public class MainApp {
 
     public static int minus(int zahl1, int zahl2) {
         return zahl1 - zahl2;
+    }
+    public static int multi(int zahl1, int zahl2){
+        return zahl1 * zahl2;
     }
 
 }
