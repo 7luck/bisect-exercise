@@ -28,6 +28,7 @@ public class MainApp {
         final double epsilon = 0.00001;
         double y_m = 0.0, m = 0.0;
         //und es funktioniert....
+        // JUHUUU 
         // x^3-2*x^2-3*x
         do {
             m = (a + b) / 2;
