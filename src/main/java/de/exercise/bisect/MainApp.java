@@ -20,6 +20,8 @@ public class MainApp {
         polynom = new Polynom(0, 1, -2, -3, 0);
         
         bisect( (double) 1, (double) 4);
+
+        System.out.println("Summe: " + sum(4, 7));
         
         
     }
@@ -50,6 +52,10 @@ public class MainApp {
             
         } while (Math.abs(y_m) > epsilon && counter < maxIteration);
         return m;
+    }
+
+    public static int sum(int z1, int z2) {
+        return z1 + z2;
     }
 
 }
