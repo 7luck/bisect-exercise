@@ -54,8 +54,8 @@ public class MainApp {
         return m;
     }
 
-    public static int sum(int z1, int z2) {
-        return z1 + z2;
+    public static int sum(int zahl1, int zahl2) {
+        return zahl1 + zahl2;
     }
 
 }
