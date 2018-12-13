@@ -27,7 +27,7 @@ public class MainApp {
     private static Double bisect(double a, double b) {
         final double epsilon = 0.00001;
         double y_m = 0.0, m = 0.0;
-        //test aller tests
+        //und es funktioniert....
         // x^3-2*x^2-3*x
         do {
             m = (a + b) / 2;
